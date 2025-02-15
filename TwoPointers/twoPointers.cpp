@@ -15,12 +15,13 @@ int main() {
     cout << "Now Enter Target: ";
     cin >> target;
 
-    sort(a, a+n);
+    sort(a, a+n); // If not sorted => O(nlogn)
 
     int i=0;
     int j=n-1;
     int f=0;
 
+    // O(n)
     while(i<j) {
         if(a[i]+a[j] == target) {
             f=1;
